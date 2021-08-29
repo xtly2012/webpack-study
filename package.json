@@ -1,5 +1,5 @@
 {
-  "name": "loader-example",
+  "name": "webpack-study",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "html-webpack-plugin": "^4.5.0",
     "loader-utils": "^2.0.0",
     "open": "^7.3.0",
-    "webpack": "^5.7.0"
+    "webpack": "^4.7.0"
   },
   "devDependencies": {
     "webpack-cli": "^4.2.0"

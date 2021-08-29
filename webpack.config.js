@@ -1,9 +1,14 @@
 const path = require("path");
+const HellPlugin = require("./plugins/HelloPlugin");
 
 module.exports = {
   mode: 'development',
   entry: {
     main: './src/index.js'
+  },
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [{
@@ -16,8 +21,7 @@ module.exports = {
       }
     }]
   },
-  output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'dist'),
-  },
+  plugins: [
+    new HellPlugin({}),
+  ],
 }
